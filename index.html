@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solar system</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Calculate a weight of an object on a planet</h1>
+
+      <div class="header-content">
+        <input
+          class="btn"
+          type="text"
+          id="mass"
+          placeholder="Mass in Kilogram"
+        />
+        <select class="btn" id="planet">
+          <option value="unknown">--Select planet--</option>
+          <option value="mercury">MERCURY</option>
+          <option value="venus">VENUS</option>
+          <option value="earth">EARTH</option>
+          <option value="moon">MOON</option>
+          <option value="mars">MARS</option>
+          <option value="jupiter">JUPITER</option>
+          <option value="saturn">SATURN</option>
+          <option value="liranus">LIRANUS</option>
+          <option value="neptune">NEPTUNE</option>
+          <option value="pluto">PLUTO</option>
+        </select>
+        <button class="btn" id="calculate-btn">Calculate weight</button>
+      </div>
+    </header>
+    <main>
+      <div class="flex-container">
+        <p id="error-message" class="error-message"></p>
+      </div>
+      <div class="screen" id="displayScreen">
+        <div class="img" id="showPlanet"></div>
+        <div class="info" id="showInfo"></div>
+      </div>
+    </main>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
